@@ -40,7 +40,8 @@
     "@stdlib/ndarray-base-bytes-per-element": "^0.2.2",
     "@stdlib/object-assign": "^0.2.2",
     "@stdlib/strided-base-write-dataview": "github:stdlib-js/strided-base-write-dataview#main",
-    "@stdlib/types": "^0.4.1"
+    "@stdlib/types": "^0.4.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.2.2",
