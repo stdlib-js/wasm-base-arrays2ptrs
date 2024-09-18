@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/wasm-base-arrays2ptrs
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-arrays2ptrs = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var arrays2ptrs = require( 'path/to/vendor/umd/wasm-base-arrays2ptrs/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.arrays2ptrs;
-})();
-</script>
+var arrays2ptrs = require( '@stdlib/wasm-base-arrays2ptrs' );
 ```
 
 #### arrays2ptrs( ctx, arrays )
@@ -181,19 +175,14 @@ In addition to each element's existing properties, each element of the returned 
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-property@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-dtype2wasm@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var setReadOnlyAccessor = require( '@stdlib/utils-define-nonenumerable-read-only-accessor' );
+var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property' );
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var DataView = require( '@stdlib/array-dataview' );
+var Float64Array = require( '@stdlib/array-float64' );
+var dtype2wasm = require( '@stdlib/wasm-base-dtype2wasm' );
+var arrays2ptrs = require( '@stdlib/wasm-base-arrays2ptrs' );
 
 function Context() {
     this._buffer = new ArrayBuffer( 100 );
@@ -245,11 +234,6 @@ var out = arrays2ptrs( ctx, [ xobj, yobj ] );
 // returns [...]
 
 console.log( out );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -344,13 +328,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/wasm-base-arrays2ptrs/main/LICENSE
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/umd
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/base/array2dtype]: https://github.com/stdlib-js/wasm-base-array2dtype/tree/umd
+[@stdlib/wasm/base/array2dtype]: https://github.com/stdlib-js/wasm-base-array2dtype
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 </section>
 
