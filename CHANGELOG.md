@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-15)
+## Unreleased (2024-09-18)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`7d73b4c`](https://github.com/stdlib-js/stdlib/commit/7d73b4cd92b702acdd4aeaf015a8e4a687133f54) - **test:** fix index _(by Athan Reines)_
 -   [`be28c74`](https://github.com/stdlib-js/stdlib/commit/be28c74db2fee7929fbaa01487d615f860be645b) - **feat:** add `wasm/base/arrays2ptrs` _(by Athan Reines)_
 
 </details>
