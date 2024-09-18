@@ -3,31 +3,8 @@
   "version": "0.0.0",
   "description": "Convert a list of arrays to pointers (i.e., byte offsets) in WebAssembly module memory.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "directories": {
-    "benchmark": "./benchmark",
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "type": "module",
+  "main": "./mod.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -36,43 +13,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/ndarray-base-bytes-per-element": "^0.2.2",
-    "@stdlib/object-assign": "^0.2.2",
-    "@stdlib/strided-base-write-dataview": "github:stdlib-js/strided-base-write-dataview#main",
-    "@stdlib/types": "^0.4.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
-  },
-  "devDependencies": {
-    "@stdlib/array-buffer": "^0.2.2",
-    "@stdlib/array-dataview": "^0.2.2",
-    "@stdlib/array-dtype": "^0.3.0",
-    "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/array-zeros": "^0.2.2",
-    "@stdlib/assert-is-array": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/wasm-base-dtype2wasm": "github:stdlib-js/wasm-base-dtype2wasm#main",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "webassembly",
@@ -83,7 +23,6 @@
     "utils",
     "util"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
