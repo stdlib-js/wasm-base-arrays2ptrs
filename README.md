@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-arrays2ptrs/tags). For example,
+
+```javascript
 import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.0-esm/index.mjs';
 ```
 
@@ -169,7 +174,7 @@ import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/
 import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import dtype2wasm from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-dtype2wasm@esm/index.mjs';
-import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.0-esm/index.mjs';
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@esm/index.mjs';
 
 function Context() {
     this._buffer = new ArrayBuffer( 100 );
