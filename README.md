@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@deno/mod.js';
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-deno/mod.js';
 ```
 
 #### arrays2ptrs( ctx, arrays )
@@ -164,7 +164,7 @@ import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno
 import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import dtype2wasm from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-dtype2wasm@deno/mod.js';
-import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@deno/mod.js';
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-deno/mod.js';
 
 function Context() {
     this._buffer = new ArrayBuffer( 100 );
