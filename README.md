@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+arrays2ptrs = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-arrays2ptrs/tags). For example,
+
+```javascript
 arrays2ptrs = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var arrays2ptrs = require( 'path/to/vendor/umd/wasm-base-arrays2ptrs/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -191,7 +196,7 @@ In addition to each element's existing properties, each element of the returned 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-dtype2wasm@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
