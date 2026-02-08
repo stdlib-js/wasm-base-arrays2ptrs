@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-arrays2ptrs/tags). For example,
+
+```javascript
 import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-deno/mod.js';
 ```
 
@@ -164,7 +169,7 @@ import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno
 import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import dtype2wasm from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-dtype2wasm@deno/mod.js';
-import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@v0.1.1-deno/mod.js';
+import arrays2ptrs from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-arrays2ptrs@deno/mod.js';
 
 function Context() {
     this._buffer = new ArrayBuffer( 100 );
