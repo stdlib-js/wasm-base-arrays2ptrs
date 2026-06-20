@@ -40,7 +40,7 @@
     "@stdlib/ndarray-base-bytes-per-element": "^0.3.1",
     "@stdlib/object-assign": "^0.2.3",
     "@stdlib/strided-base-write-dataview": "^0.1.1",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.5.1"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.2.3",
